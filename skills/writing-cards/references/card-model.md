@@ -18,7 +18,10 @@ Use este modelo como estrutura para criar ou revisar um card de produto ou traba
 
 **Título de sprint:** `S{N}-{SIGLA}-{NN} [TIPO] [BE/FE/ARCH] {Resumo da tarefa}`
 **Título de backlog:** `BKL-{SIGLA}-{NN} [TIPO] [BE/FE/ARCH] {Resumo da tarefa}`
-**Status de revisão:** [um status padronizado da skill]
+**Status de revisão:** [Pronto para publicação / Falta informação / Falta detalhamento / Conflito entre fontes / Dependência bloqueante / Revisar escopo]  
+**Pontos de atenção:** [problemas específicos ou Nenhum]  
+**Impacto na publicação:** [Pronto / Bloqueado]  
+**Próxima ação:** [pergunta, decisão, ação ou Nenhuma]  
 **Tipo/categoria:** [valor conforme a taxonomia da equipe, se usada]
 **Prioridade:** [valor ou critério acordado, se definido]
 **Responsável:** [pessoa ou papel, se definido]

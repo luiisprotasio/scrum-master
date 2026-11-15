@@ -5,26 +5,17 @@ description: Use when a Scrum Master needs to create or review sprint or backlog
 
 # Writing Cards
 
-Turn project sources into one card or a coherent collection. Ask questions in conversation; do not create a local form.
+Turn project sources into one card or a coherent collection. Ask questions conversationally; do not create a separate form.
 
 ## Workflow
 
 1. **Read sources.** Inspect supplied sources and project conventions. Treat a designated scope as authoritative for its scope; use other sources as context. Surface conflicts and ask which decision governs. Do not turn assumptions into requirements.
-2. **Clarify material gaps.** Ask about unknowns that change outcome, scope, acceptance, dependencies, sprint/backlog destination, or publication. Establish single card versus collection and sprint number or backlog; ask when unclear.
-3. **Propose architecture first.** Before full cards, show each proposed title, outcome/scope boundary, dependencies, preliminary Fibonacci points, and brief rationale/uncertainty. Use only `1, 2, 3, 5, 8, 13` as relative proposals, never time or team commitments. Split work above 13. Wait for approval/adjustment before detailing. Approval does not authorize sync.
-4. **Name and draft.** Use `S{N}-{SIGLA}-{NN} [{TIPO}] [{ÁREAS}] {Resumo}` for sprints and `BKL-{SIGLA}-{NN} [{TIPO}] [{ÁREAS}] {Resumo}` for backlog. Preserve existing IDs and taxonomy; otherwise infer a scope acronym and start two-digit numbering at `01`. Every title needs a type: use team taxonomy or `[FEATURE]` (user-visible capability), `[BUG]` (defect), `[TASK]` (discovery/internal work), `[CHORE]` (maintenance). No free-form types. Optional area tags: `BE`, `FE`, `ARCH`, only when supported. Read [references/card-model.md](references/card-model.md); adapt sections and state unknowns explicitly.
-5. **Review all cards.** Give count by status and one row per card with attention points, publication impact, and next action. Use exactly one status: `Pronto para publicação`, `Falta informação`, `Falta detalhamento`, `Conflito entre fontes`, `Dependência bloqueante`, `Revisar escopo`. Only ready cards may sync. Re-review the full collection after changes.
-6. **Always create the local index.** Every run creates or updates `.scrum-master/cards/{collection}/` and its index, whether or not individual cards are saved locally. Ensure the project-root `.gitignore` contains `.scrum-master/`, adding it once and preserving other rules. For a sprint, use [references/sprint-index-model.md](references/sprint-index-model.md) and save as `Sprint N/sprint-n-index.md`; for backlog, use a matching collection index. Keep estimates and architecture only in the index, never in individual cards. Mark pre-approval indexes as proposals and update them as plans change. Ask separately whether to save one Markdown file per card in the same folder; save/update those files if requested, including when asked mid-flow.
-7. **Sync is separate and opt-in.** Follow [references/github-project-sync.md](references/github-project-sync.md) only when the SM opts in for this run.
-
-## Review output
-
-```markdown
-## Revisão dos cards
-
-| Card | Status | Pontos de atenção | Impacto na publicação | Próxima ação |
-|---|---|---|---|---|
-| [ID e título] | [status definido] | [problema ou “Nenhum”] | [Pronto / Bloqueado] | [ação ou “Nenhuma”] |
-```
+2. **Ask about sync early.** After reading sources, record any sync decision already given; otherwise ask yes/no in the first clarification turn, before discussing the card breakdown. A yes authorizes only an attempt, subject to capability checks and review. Follow [references/github-project-sync.md](references/github-project-sync.md).
+3. **Clarify gaps.** Ask about unknowns that change outcome, scope, acceptance, dependencies, destination, or publication. Establish single card versus collection and sprint number or backlog; ask when unclear.
+4. **Propose first.** Before detailing cards, show each proposed title, outcome/scope boundary, dependencies, preliminary Fibonacci points, and brief rationale/uncertainty. Use only `1, 2, 3, 5, 8, 13` as relative estimates, never time or team commitments. Split work above 13. Wait for approval or adjustment.
+5. **Draft and save every card.** Follow title rules and [references/card-model.md](references/card-model.md). Always save one Markdown file per card plus the index under `.scrum-master/cards/{collection}/`, including drafts. Ensure the project-root `.gitignore` contains `.scrum-master/`. Use [references/sprint-index-model.md](references/sprint-index-model.md) for paths and format. Estimates and rationale belong only in the index, never individual cards or GitHub data. Update files as the proposal changes.
+6. **Review and update files.** Review the whole collection and record each card's attention points and exactly one status in its file and the index: `Pronto para publicação`, `Falta informação`, `Falta detalhamento`, `Conflito entre fontes`, `Dependência bloqueante`, or `Revisar escopo`. Re-review all cards after changes. Only ready cards may sync.
+7. **Sync after review.** If the SM opted in, sync eligible cards using the registered integration and rules in [references/github-project-sync.md](references/github-project-sync.md). If not, do not make remote writes.
+8. **Report briefly.** Do not print card bodies or the full index in chat. Report status counts, the collection directory, index path, card filenames, and sync outcome. If the SM asks for every card's contents, direct them to the collection directory; show only one specifically requested card at a time.
 
 Readiness requires checking scope, outcome, acceptance, conflicts, dependencies, and duplication—not merely filled template fields.
