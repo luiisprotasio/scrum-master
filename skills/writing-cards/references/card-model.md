@@ -16,13 +16,13 @@ Use este modelo como estrutura para criar ou revisar um card de produto ou traba
 
 ---
 
-**Título de sprint:** `S{N}-{SIGLA}-{NN} [TIPO] [BE/FE/ARCH] {Resumo da tarefa}`  
-**Título de backlog:** `BKL-{SIGLA}-{NN} [TIPO] [BE/FE/ARCH] {Resumo da tarefa}`  
-**Status de revisão:** [um status padronizado da skill]  
-**Tipo/categoria:** [valor conforme a taxonomia da equipe, se usada]  
-**Prioridade:** [valor ou critério acordado, se definido]  
-**Responsável:** [pessoa ou papel, se definido]  
-**Origem/rastreabilidade:** [pedido, objetivo, decisão ou artefato de origem, se conhecido]  
+**Título de sprint:** `S{N}-{SIGLA}-{NN} [TIPO] [BE/FE/ARCH] {Resumo da tarefa}`
+**Título de backlog:** `BKL-{SIGLA}-{NN} [TIPO] [BE/FE/ARCH] {Resumo da tarefa}`
+**Status de revisão:** [um status padronizado da skill]
+**Tipo/categoria:** [valor conforme a taxonomia da equipe, se usada]
+**Prioridade:** [valor ou critério acordado, se definido]
+**Responsável:** [pessoa ou papel, se definido]
+**Origem/rastreabilidade:** [pedido, objetivo, decisão ou artefato de origem, se conhecido]
 
 **Depende de:**
 - [ID ou condição] — [como e em que etapa afeta este card].
@@ -35,10 +35,10 @@ Use este modelo como estrutura para criar ou revisar um card de produto ou traba
 
 ## 1. Contexto e resultado esperado
 
-**Situação ou necessidade:**  
+**Situação ou necessidade:**
 [Problema, oportunidade ou necessidade observável e o contexto necessário para entendê-la.]
 
-**Resultado esperado:**  
+**Resultado esperado:**
 [Mudança ou valor que deverá existir quando o trabalho estiver concluído.]
 
 **Escopo incluído:**
