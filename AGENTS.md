@@ -30,7 +30,7 @@ skills/
 - Mantenha cada skill independente. Compartilhe referências somente quando forem realmente comuns a mais de uma skill.
 - Não inclua tokens, credenciais ou configuração de autenticação. Instruções de integração devem usar capacidades já disponíveis no ambiente do agente.
 - Registre no `SKILL.md` as decisões específicas da tarefa. Evite transformar convenções de uma skill em regra global deste repositório sem necessidade.
-- Para `writing-cards`, pergunte sobre sincronização com GitHub Projects no início do fluxo, depois de ler as fontes. Salve sempre o índice e um arquivo local por card em `.scrum-master/cards/{coleção}/`; mantenha as estimativas Fibonacci somente no índice. Na resposta do agente, informe resumo, status e caminhos sem despejar todos os cards no chat. Use blocos curtos no índice, sem tabelas largas, para facilitar a leitura em terminal e texto simples.
+- Para `writing-cards`, pergunte sobre sincronização com GitHub Projects no início do fluxo, depois de ler as fontes. Use o GitHub CLI (`gh issue` para criar Issues e `gh project` para vinculá-las), sem substituir por MCP ou API direta. Salve sempre o índice e um arquivo local por card em `.scrum-master/cards/{coleção}/`; mantenha estimativas e metadados de revisão somente no índice. Cards são para desenvolvedores: não exponha status de revisão, origem/rastreabilidade nem caminhos e nomes de arquivos locais usados como fontes. Na resposta, informe resumo, status e caminhos sem despejar todos os cards no chat. Use blocos curtos no índice, sem tabelas largas, para facilitar a leitura em terminal e texto simples.
 
 ## Teste local
 
