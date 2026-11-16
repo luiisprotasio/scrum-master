@@ -1,0 +1,33 @@
+name: "Sugira uma skill!"
+description: Tem algo que gostaria que seu agente SM faça com facilidade? Sugira!.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado pela sugestão! Por favor, preencha o formulário abaixo com o máximo de detalhes possível para que possamos entender melhor a sua ideia.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Resumo
+      description: Descreva a funcionalidade desejada.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento esperado
+      description: O que deveria ser feito pelo agente?
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmação
+      options:
+        - label: Já procurei nas issues existentes e não encontrei uma sugestãoigual.
+          required: true
