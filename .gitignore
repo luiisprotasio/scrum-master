@@ -1,2 +1,4 @@
 .scrum-master/
 docs/
+__pycache__/
+*.py[cod]
