@@ -21,7 +21,7 @@ O modelo padrão é `assets/blue.docx`. Um modelo alternativo pode ser informado
 
 Preserve estilos, cabeçalho, rodapé, imagens e outros elementos fixos do modelo. Se um modelo alternativo não tiver os campos ou o ponto de inserção esperados, não remova nem substitua conteúdo por suposição; mostre o que falta e peça o mapeamento necessário.
 
-No modelo `blue`, títulos Markdown de nível 1 ficam centralizados, em teal e negrito. Títulos de nível 2 ficam alinhados à esquerda, em cinza neutro e negrito, com recuo de uma parada de tabulação (0,5″).
+No modelo `blue`, títulos Markdown de nível 1 ficam centralizados, em teal e negrito, com 24 pt. Títulos dos níveis 2 a 9 usam 13 pt, negrito, cinza do texto (`#666666`) e alinhamento à esquerda. O nível 2 tem recuo de uma parada de tabulação (0,5″); os níveis 3 a 9 não têm recuo adicional.
 
 ## Saída
 
