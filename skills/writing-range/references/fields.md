@@ -32,7 +32,7 @@ Apresente o contexto do projeto, o problema atual e o que a proposta pretende pe
 
 Informe a duração e a quantidade de sprints planejadas. Esses valores precisam refletir o plano acordado; os 15 dias e as duas sprints de `example.md` são apenas dados de demonstração.
 
-Para cada sprint, crie um título de nível 2 (`##`) com o número e um objetivo , por exemplo `## Sprint 1: agenda e disponibilidade`. Em seguida, descreva o trabalho detalhadamente. não tenha dó de gastar linhas e o resultado esperado naquela sprint. Mantenha o escopo compatível com a capacidade e a duração acordadas.
+Para cada sprint, crie um título de nível 2 (`##`) com o número e um objetivo , por exemplo `## Sprint 1: Agenda e disponibilidade`. Em seguida, descreva o trabalho detalhadamente. não tenha dó de gastar linhas e o resultado esperado naquela sprint. Mantenha o escopo compatível com a capacidade e a duração acordadas. Lembre de seguir a capitalização das letras
 
 ### 3. Usuários previstos
 
@@ -47,12 +47,12 @@ Converta as necessidades dos papéis em histórias curtas. Cada item começa com
 
 `Como [perfil], quero [ação ou capacidade] para [benefício esperado].`
 
-No exemplo, os identificadores usam o prefixo do papel (`ADM` para Administrador e `USR` para Usuário) mais um número sequencial de dois dígitos: `ADM01`, `USR01`. Mantenha os IDs únicos e consistentes no documento. Cada história deve expressar uma necessidade e um benefício; não misture várias capacidades independentes em um único item.
+Use ID's numéricos (`US01`, `US02`). Mantenha os IDs únicos e consistentes no documento. Cada história deve expressar uma necessidade e um benefício; não misture várias capacidades independentes em um único item. Não insira bullet ( - ) no início da user storie.
 
 Exemplo:
 
 ```markdown
-- **ADM01:** Como administrador, quero cadastrar os espaços disponíveis para que os moradores possam consultá-los ao fazer uma reserva.
+ **US01:** Como administrador, quero cadastrar os espaços disponíveis para que os moradores possam consultá-los ao fazer uma reserva.
 ```
 
 ### 5. Fora de escopo

@@ -5,11 +5,15 @@ description: Use when a product manager needs to clarify a project's boundaries 
 
 # Delimitar o escopo de um projeto
 
-Conduza uma conversa com a pessoa responsável pelo produto para entender o problema, os usuários, os resultados esperados e os limites do projeto. Entregue um arquivo Markdown com a estrutura de [`references/example.md`](references/example.md), preenchido conforme [`references/fields.md`](references/fields.md).
+Conduza uma conversa com a pessoa responsável pelo produto para entender o problema, os usuários, os resultados esperados e os limites do projeto. Entregue um arquivo Markdown com a estrutura de [`references/example.md`](references/example.md), preenchido conforme [`references/fields.md`](references/fields.md), de acordo com o modelo [`references/model.md`](references/model.md).
+É EXTREMAMENTE IMPORTANTE SEGUIR O MODELO ESTRITAMENTE. Não adicione seções, campos ou formatos que não estejam no modelo, a menos que a pessoa responsável pelo produto solicite explicitamente. Além disso, tente manter as palavras idênticas ao modelo, priorizando substituir os campos variáveis.
+O número de Sprints deve se adaptar ao combinado, mas mantenha a estrutura de sprints, sendo a primeira de alinhamento.
+Repito, mantenha os dizeres do modelo, substituindo apenas os campos variáveis. Você pode adaptar, mas nunca realizar uma grande transformação no texto.
+Exceção: Campos comentados são instruções para preenchimento.
 
 ## Conversa
 
-1. Leia `references/fields.md` e `references/example.md` antes de iniciar. Leia também os materiais do projeto que a pessoa fornecer ou indicar.
+1. Leia `references/fields.md`, `references/example.md` e `references/model.md` antes de iniciar. Leia também os materiais do projeto que a pessoa fornecer ou indicar.
 2. Use [`references/questions.md`](references/questions.md) como banco de perguntas. Faça perguntas em rodadas curtas, selecionadas pelas lacunas no entendimento atual. Não despeje o questionário inteiro nem repita algo que já foi respondido.
 3. Explore o problema e seu impacto, os usuários e seus objetivos, as capacidades desejadas, as regras de negócio, as restrições e o que ficará fora do escopo. Pergunte sobre sprints somente quando houver ou se esperar um planejamento de entrega.
 4. Diferencie fatos confirmados de decisões em aberto. Não invente datas, prazos, papéis, regras, capacidades, prioridades ou plano de sprints. Se uma resposta mudar o escopo, faça uma pergunta de acompanhamento antes de consolidá-la.
@@ -17,7 +21,7 @@ Conduza uma conversa com a pessoa responsável pelo produto para entender o prob
 
 ## Arquivo de saída
 
-Depois da confirmação, produza um arquivo Markdown seguindo a ordem, os campos e a sintaxe de `example.md`. Use `fields.md` para preencher metadados, seções e user stories. Mantenha a estrutura do exemplo; não acrescente seções ou formatos sem necessidade ou pedido da pessoa.
+Depois da confirmação, produza um arquivo Markdown seguindo a ordem, os campos e a sintaxe de `example.md` e `model.md`. Use `fields.md` para preencher metadados, seções e user stories. Mantenha a estrutura do exemplo; não acrescente seções ou formatos sem necessidade ou pedido da pessoa.
 
 Inclua `project_name`. Inclua `date` somente quando a pessoa informar a data e seu significado; escreva-a como `AAAA-MM-DD`. O YAML deve ficar no início do arquivo, sem cercas de código.
 
